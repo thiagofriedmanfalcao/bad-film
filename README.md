@@ -33,5 +33,5 @@ Através do prompt de comando, vá até o diretório do projeto bad-film e
 Execute o comando abaixo para executar os testes
 
 ```bash
-  ./gradlew test
+./gradlew test
 ```
