@@ -75,12 +75,12 @@ public class BadFilmServiceImpl implements BadFilmService {
 
         List<IntervalWinnersDto> sortedByMax = intervals.stream()
                                                 .sorted((a, b) -> Integer.compare(b.interval, a.interval))
-                                                .limit(2)
+                                                .limit(1)
                                                 .toList();
 
         List<IntervalWinnersDto> sortedByMin = intervals.stream()
                                                 .sorted(Comparator.comparingInt(a -> a.interval))
-                                                .limit(2)
+                                                .limit(1)
                                                 .toList();
 
         Map<String, Object> resultWinners = new LinkedHashMap<>();
